@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PotHoles</string>
+    <string name="editTextUsernameHint">Username</string>
+    <string name="registerButton">Registrati</string>
+    <string name="welcomeMessage">Benvenuto in PotHoles!</string>
+    <string name="editTextUsernameLabel">Inserisci una Username per cominciare ad utilizzare l\'applicazione</string>
+    <string name="TextRileva">Rileva</string>
+    <string name="TextEventi">Eventi</string>
+    <string name="welcomeHomeMessage">Benvenuto,</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="title_home">Home</string>
+    <string name="eventi_rilevati">Eventi rilevati</string>
+    <string name="rilevazione_text">Rilevazione in Corso...</string>
+    <string name="interrompi_text">Interrompi</string>
+    <string name="logout_text">Logout</string>
+    <string name="eventi_rilevati_nell_ultima_sessione">Eventi rilevati nell\'ultima sessione</string>
+    <string name="sample">sample</string>
+    <string name="cerca_eventi_vicini">Cerca eventi vicini</string>
+</resources>

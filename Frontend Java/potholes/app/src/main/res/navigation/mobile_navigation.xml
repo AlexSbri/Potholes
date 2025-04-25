@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.potholes.ui.home.HomeFragment"
+        android:label="@string/TextRileva"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_eventi"
+        android:name="com.example.potholes.ui.eventi.EventiFragment"
+        android:label="@string/TextEventi"
+        tools:layout="@layout/eventi_fragment" >
+        <action
+            android:id="@+id/action_navigation_eventi_to_loadingFragment"
+            app:destination="@id/loadingFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/navigation_eventi" />
+        <action
+            android:id="@+id/action_navigation_eventi_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="com.example.potholes.ui.loading.LoadingFragment"
+        android:label="PotHoles" >
+        <action
+            android:id="@+id/action_loadingFragment_to_navigation_eventi"
+            app:destination="@id/navigation_eventi"
+            app:exitAnim="@android:anim/fade_out"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/loadingFragment" />
+        <action
+            android:id="@+id/action_loadingFragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+</navigation>
